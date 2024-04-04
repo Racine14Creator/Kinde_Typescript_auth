@@ -11,7 +11,7 @@ export default async function Navbar() {
                 <div className="flex items-center gap-x-5">
                     {await isAuthenticated() ? (
                         <LogoutLink>
-                            <button>Se deconnecter</button>
+                            <button className="bg-success p-2 rounded-md cursor-pointer">Se deconnecter</button>
                         </LogoutLink>
                     ) : (
                         <>
